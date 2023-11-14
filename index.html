@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="author" name="Kioko Titus" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/myicon.jpg">
+  <title>Login and Registration Form with Js</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body> 
+  
+<section id="main">
+  
+<h1 id="title">Login</h1>
+<hr>
+
+<div id="btns">
+  <button id="login-1" onclick="loginForm();" class="active">Login</button>
+  <button id="reg-1" onclick="registration();">Registration</button>
+</div>
+
+<div id="form-1">
+  <form action="#" method="post" >
+<input type="email" name="email" id="email" placeholder="Email Address" required>
+
+<br>
+<input type="password" name="password" id="password" placeholder="Password" required>
+
+<br>
+<p><a href="#" onclick="ForgotPassword();" >Forgot Password?</a>
+<span class="spa"><input type="checkbox" name="" id="check" onclick="togglePassword();"><strong>Check Password</strong>  </span></p>
+<button class="reg" type="submit" >Login</button>
+</form>
+<p>Don't have an account? <a href="#" onclick="registration();">Register Now</a></p>
+</div>
+
+<div id="register">
+  <form action="#" method="post" >
+  <input type="text" placeholder="Full Name" required ><br>
+  <input type="email" placeholder="Email Address" required ><br>
+  <input type="password" placeholder="Password" required ><br>
+  <input type="password" placeholder="Confirm Password" required><br>
+  <button class="reg" type="submit">Register Here</button><br>
+  </form>
+  <p>Already have an account? <a href="#" onclick="loginForm();">Login now</a></p>
+</div>
+
+<div id="reset">
+  <form action="#" method="post">
+<input type="email" placeholder="Email Address" required ><br>
+<button class="reg" type="reset">Reset Password</button><br>
+</form>
+<p class="link">Back to the <a href="#"onclick="loginForm();" >Login Page</a> <span>|</span> <a href="#" onclick="registration();">Registration Page</a></p>
+</div>
+
+</section>
+ 
+
+<script src="main.js"></script>
+
+</body>
+</html>

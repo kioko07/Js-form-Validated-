@@ -1,0 +1,101 @@
+function registration(){
+
+  setTitle("Registration");
+
+  ShowHideForm("register","Show");
+  ShowHideForm("form-1","Hide");
+  ShowHideForm("reset","Hide");
+
+  ActiveInactiveBtn('login-1',"Inactive");
+  ActiveInactiveBtn('reg-1',"Active");
+}
+
+function loginForm(){
+  setTitle("Login");
+
+  ShowHideForm("register","Hide");
+  ShowHideForm("form-1","Show");
+  ShowHideForm("reset","Hide");
+
+  ActiveInactiveBtn('login-1',"Active");
+  ActiveInactiveBtn('reg-1',"Inactive");
+
+}
+
+function ForgotPassword(){
+  setTitle("Forgot Password");
+
+  ShowHideForm("register","Hide");
+  ShowHideForm("form-1","Hide");
+  ShowHideForm("reset","Show");
+
+  ActiveInactiveBtn('login-1',"Active");
+  ActiveInactiveBtn('reg-1',"Inactive");
+
+  ShowHideButtons("Hide");
+
+}
+function ShowHideButtons(ShowOrHide){
+  const formbtn = document.getElementById('btns');
+  if(ShowOrHide == "Show"){
+    formbtn.style.display = "block"
+  }else{
+    formbtn.style.display = "none"
+  }
+}
+
+function ActiveInactiveBtn(ButtonID,ActiveOrInactive){
+  const Button = document.getElementById(ButtonID);
+  if(ActiveOrInactive == "Active"){
+    Button.classList.add('active');
+  }else{
+    Button.classList.remove('active');
+  }
+}
+
+function setTitle(Title){
+  const formTitle = document.getElementById('title');
+  formTitle.innerHTML = Title;
+}
+
+function ShowHideForm(FormID,ShowOrHide){
+  const Form = document.getElementById(FormID);
+  if(ShowOrHide == "Show"){
+    Form.style.display = "block";
+  }else{
+    Form.style.display = "none";
+  }
+}
+function togglePassword(){
+  if(check.checked) password.type = "text";
+  else password.type = "password";
+
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
